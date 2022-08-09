@@ -9,7 +9,10 @@ export const SubscriberList = () => {
   const [txt, setTxt] = useState("");
 
   const getData = async () => {
-    const result = await axios.get("http://localhost:3030/subscribers");
+    const result = await axios.post(
+      "http://localhost:3030/subscribersbycity",
+      {}
+    );
     setData(result.data);
     setFilt(result.data);
   };
