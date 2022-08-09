@@ -1,11 +1,15 @@
-import './App.css';
-import { Landing } from './Components/Landing';
-
+import "./App.css";
+import { Landing } from "./Components/Landing";
+import { Card, CardContent } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-       <Landing/>
+      <Card>
+        <CardContent>
+          <Landing />
+        </CardContent>
+      </Card>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export const Navi = () => {
@@ -7,10 +7,24 @@ export const Navi = () => {
     <React.Fragment>
       <Grid container>
         <Grid item xs={1}>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <Button variant="contained">Home</Button>
+          </Link>
         </Grid>
-        <Grid>
-          <Link to="/subscribers">Subscribers</Link>
+        <Grid item xs={2}>
+          <Link to="/subscribers">
+            <Button variant="contained">Subscribers</Button>
+          </Link>
+        </Grid>
+        <Grid item xs={1}>
+          <Link to="/category">
+            <Button variant="contained">Category</Button>
+          </Link>
+        </Grid>
+        <Grid item xs={1}>
+          <Link to="/gender">
+            <Button variant="contained">Gender</Button>
+          </Link>
         </Grid>
       </Grid>
     </React.Fragment>
