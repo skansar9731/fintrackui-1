@@ -7,6 +7,7 @@ export const Genders = () => {
   return (
     <React.Fragment>
       <Grid container spacing={3}>
+        <h4>Gender Home</h4>
         <Grid item xs={6}>
           <Card>
             <CardContent>
